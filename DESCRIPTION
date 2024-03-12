@@ -1,7 +1,7 @@
 Package: MEIGOR
 Type: Package
 Title: MEIGOR - MEtaheuristics for bIoinformatics Global Optimization
-Version: 1.36.0
+Version: 1.36.1
 Date: 2020-06-09
 Authors@R:c(
     person("Jose A.", "Egea", email = "josea.egea@gmail.com", role = c("aut", "cre")),
@@ -18,7 +18,7 @@ Description: MEIGOR provides a comprehensive environment for performing global
     with Bioconductor's infrastructure for a seamless analysis workflow.
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
+LazyData: false
 biocViews: SystemsBiology, Optimization, Software
 Depends: R (>= 4.0), Rsolnp, snowfall, deSolve, CNORode
 Suggests: CellNOptR, knitr, BiocStyle
