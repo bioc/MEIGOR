@@ -1,17 +1,27 @@
 Package: MEIGOR
 Type: Package
-Title: MEIGO - MEtaheuristics for bIoinformatics Global Optimization
+Title: MEIGOR - MEtaheuristics for bIoinformatics Global Optimization
 Version: 1.36.0
 Date: 2020-06-09
-Author: Jose A. Egea, David Henriques, Alexandre Fdez. Villaverde, Thomas Cokelaer
+Authors@R:c(
+    person("Jose A.", "Egea", email = "josea.egea@gmail.com", role = c("aut", "cre")),
+    person("David", "Henriques", role = "aut"),
+    person("Alexandre", "Fdez. Villaverde", role = "aut"),
+    person("Thomas", "Cokelaer", role = "aut"))
 Maintainer: Jose A. Egea <josea.egea@gmail.com>
-Depends: Rsolnp, snowfall, CNORode, deSolve
-Suggests: CellNOptR, knitr
-VignetteBuilder: knitr
-Description: Global Optimization
+Description: MEIGOR provides a comprehensive environment for performing global 
+    optimization tasks in bioinformatics and systems biology.
+    It leverages advanced metaheuristic algorithms to efficiently
+    search the solution space and is specifically tailored to handle
+    the complexity and high-dimensionality of biological datasets.
+    This package supports various optimization routines and is integrated
+    with Bioconductor's infrastructure for a seamless analysis workflow.
 License: GPL-3
-LazyLoad: yes
-biocViews: SystemsBiology
+Encoding: UTF-8
+LazyData: true
+biocViews: SystemsBiology, Optimization, Software
+Depends: R (>= 4.0), Rsolnp, snowfall, deSolve, CNORode
+Suggests: CellNOptR, bookdown, BiocStyle
+VignetteBuilder: bookdown
 NeedsCompilation: no
-Packaged: 2020-06-11 11:40:20 UTC; Jose A
 PackageStatus: Deprecated
