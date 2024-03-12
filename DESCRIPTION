@@ -21,7 +21,7 @@ Encoding: UTF-8
 LazyData: true
 biocViews: SystemsBiology, Optimization, Software
 Depends: R (>= 4.0), Rsolnp, snowfall, deSolve, CNORode
-Suggests: CellNOptR, bookdown, BiocStyle
-VignetteBuilder: bookdown
+Suggests: CellNOptR, knitr, BiocStyle
+VignetteBuilder: knitr
 NeedsCompilation: no
 PackageStatus: Deprecated

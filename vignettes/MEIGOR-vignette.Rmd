@@ -16,11 +16,14 @@ author:
   - name: "Julio Saez-Rodriguez"
     affiliation: Universität Heidelberg, Heidelberg, Germany
     email: pub.saez@uni-heidelberg.de
+package: MEIGOR
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output:
-  bookdown::html_document2:
-    toc: true
-    number_sections: true
+  BiocStyle::html_document
+vignette: |
+  %\VignetteIndexEntry{MEIGOR: a software suite based on metaheuristics for global optimization in systems biology and bioinformatics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 bibliography: MEIGO_refs.bib
 ---
 
@@ -1026,14 +1029,14 @@ The basic idea is that each binary decision variable corresponds to a logic disj
 library(MEIGOR)
 library(CellNOptR)
 data("CellNOptR_example",package="MEIGOR")
-cnolist=CNOlist(cnolist)
+cnolist=CNOlist(cnolist_cellnopt)
 plotCNOlist(cnolist)
 ```
  
 The original prior-knowledge network (a signed directed graph) can be expanded into an hypergraph containing all possible Boolean gates. CellNOptR can then be used to visualize the obtained network (see Figure \@ref(fig:CellNOptRExampleFig)).
 
 ```{r CellNOptRExampleFig,include=TRUE,echo=FALSE,results='hide', warning=FALSE, fig.align = 'center', fig.cap = "The expanded model for the CellNOptR (Boolean logic) example. This representation contains all possible logic gates where each binary decision variable corrersponds to an hyperedge/logical disjunction."}
-model <- preprocessing(cnolist, model, expansion=TRUE, compression=TRUE, verbose=FALSE)
+model <- preprocessing(cnolist, model_cellnopt, expansion=TRUE, compression=TRUE, verbose=FALSE)
 plotModel(model, cnolist)
 ```
 
