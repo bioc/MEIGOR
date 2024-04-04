@@ -190,9 +190,10 @@ initialize = function(output,options){
   
   #### this part is not ok but it doesn't influence the example because there is no seed given
   if (!is.null(options$seed)){
-    output$random = runif(seed = options$seed)
+      set.seed(options$seed)
+      output$random = runif(1)
   } else {
-    output$random = runif(1)
+      output$random = runif(1)
   }
   #########
   
