@@ -1,8 +1,8 @@
 Package: MEIGOR
 Type: Package
 Title: MEIGOR - MEtaheuristics for bIoinformatics Global Optimization
-Version: 1.37.1
-Date: 2024-04-02
+Version: 1.37.2
+Date: 2020-06-09
 Authors@R:c(
     person("Jose A.", "Egea", email = "josea.egea@gmail.com", role = c("aut", "cre")),
     person("David", "Henriques", role = "aut"),
@@ -24,4 +24,3 @@ Depends: R (>= 4.0), Rsolnp, snowfall, deSolve, CNORode
 Suggests: CellNOptR, knitr, BiocStyle
 VignetteBuilder: knitr
 NeedsCompilation: no
-PackageStatus: Deprecated
